@@ -8,5 +8,6 @@
 </head>
 <body>
 最大的数为：<%=request.getParameter("max") %>
+<jsp:forward page=""></jsp:forward>
 </body>
 </html>
