@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="ISO-8859-1" import="com.vince.dao.impl.TeacherDaoImpl,com.vince.dao.TeacherDao,com.vince.model.person,java.util.List"%>
+    pageEncoding="utf-8" import="com.vince.dao.impl.TeacherDaoImpl,com.vince.dao.TeacherDao,com.vince.model.person,java.util.List"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <%
 	TeacherDao dao = new TeacherDaoImpl();
@@ -7,7 +7,7 @@
 %>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html"  charset=UTF-8" >
+
 <title>Insert title here</title>
 </head>
 <body>
@@ -32,5 +32,10 @@
 		}
 		%>
 	</table>
+	<form action="result.jsp">
+	<input type="text" name ="one">
+	<input type="text" name ="two"> 
+	<input  type="submit" value="提交">
+	</form>
 </body>
 </html>
